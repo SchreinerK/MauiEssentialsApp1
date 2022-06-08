@@ -1,0 +1,2 @@
+﻿Freigabe (Share)
+https://docs.microsoft.com/de-de/dotnet/maui/platform-integration/data/share?tabs=windows

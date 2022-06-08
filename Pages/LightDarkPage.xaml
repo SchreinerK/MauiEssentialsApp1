@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiEssentialsApp1.Pages.LightDarkPage"
+             xmlns:k="clr-namespace:KsWare.Maui.Controls.Xaml"
+             Title="LightDarkPage">
+    <StackLayout x:Name="RootLayout" Margin="10,0,10,0">
+		<Label Text="To test this page toggle your theme."
+		       TextColor="{k:AppAutoThemeBinding {x:Static Colors.Black}}"
+               BackgroundColor="{k:AppAutoThemeBinding {x:Static Colors.White}}"
+		       />
+		<Label Text="Red"
+		       TextColor="{k:AppAutoThemeBinding {x:Static Colors.DarkRed}}"
+		       BackgroundColor="{k:AppAutoThemeBinding {x:Static Colors.White}}"
+		/>
+		<Label Text="Blue"
+		       TextColor="{k:AppAutoThemeBinding {x:Static Colors.DarkBlue}}"
+		       BackgroundColor="{k:AppAutoThemeBinding {x:Static Colors.White}}"
+		/>
+		<Label Text="Green"
+		       TextColor="{k:AppAutoThemeBinding {x:Static Colors.Black}}"
+		       BackgroundColor="{k:AppAutoThemeBinding {x:Static Colors.LightGreen}}"
+		/>
+    </StackLayout>
+</ContentPage>

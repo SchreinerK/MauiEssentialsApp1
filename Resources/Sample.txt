@@ -1,0 +1,2 @@
+﻿Files that were added to the project with the Build Action of MauiAsset can be opened with this method. .NET MAUI projects will process any file in the Platform\Resources\Raw folder as a MauiAsset.
+

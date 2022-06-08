@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiEssentialsApp1.Pages.LayoutPage"
+             Title="LayoutPage">
+	<StackLayout>
+		<!-- Layout cycle detected.  Layout could not complete. -->
+		<FlexLayout AlignItems="Center" Direction="Row" >
+			<Label Text="Label" FlexLayout.Basis="Auto" FlexLayout.Order="-1" />
+			<Slider Value="0.5" FlexLayout.Grow="1"/>
+		</FlexLayout>
+
+		<!-- <FlexLayout AlignItems="Center" Direction="Row" > -->
+		<!-- 	<Label Text="Label" FlexLayout.Basis="Auto" FlexLayout.Order="-1" /> -->
+		<!-- 	<Grid FlexLayout.Grow="1" Background="Gray"> -->
+		<!-- 		<Slider Value="0.5"/> -->
+		<!-- 	</Grid> -->
+		<!-- </FlexLayout> -->
+
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
+			<Label Text="Label" Grid.Column="0"/>
+			<Grid Background="Gray" Grid.Column="1"/>
+		</Grid>
+	</StackLayout>
+</ContentPage>
